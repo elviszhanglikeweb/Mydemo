@@ -1,0 +1,43 @@
+[18-Oct-2016 03:44:34 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:44:34 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/check.php on line 20
+[18-Oct-2016 03:44:42 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/check.php on line 20
+[18-Oct-2016 03:44:42 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:45:39 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:45:43 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:45:47 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:45:47 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:45:48 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:45:48 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:45:48 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:45:48 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:45:50 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:45:50 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:45:51 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:45:51 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:49:18 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:49:55 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:55:01 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:55:02 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:55:03 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:55:03 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:55:10 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:55:10 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:55:10 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:55:28 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:55:28 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:55:28 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[18-Oct-2016 03:55:28 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/ssttkkci/public_html/Jump/login.php on line 20
+[20-Nov-2016 01:41:21 America/Chicago] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'alpha'@'localhost' (using password: YES) in /home/ssttkkci/public_html/Jump/login.php on line 10
+[20-Nov-2016 01:41:21 America/Chicago] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'alpha'@'localhost' (using password: YES) in /home/ssttkkci/public_html/Jump/check.php on line 10
+[20-Nov-2016 01:41:23 America/Chicago] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'alpha'@'localhost' (using password: YES) in /home/ssttkkci/public_html/Jump/register.php on line 8
+[20-Nov-2016 01:41:23 America/Chicago] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/ssttkkci/public_html/Jump/register.php on line 14
+[20-Nov-2016 01:41:23 America/Chicago] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home/ssttkkci/public_html/Jump/register.php on line 17
+[20-Nov-2016 01:41:23 America/Chicago] PHP Warning:  mysqli_close(): Couldn't fetch mysqli in /home/ssttkkci/public_html/Jump/register.php on line 19
+[20-Nov-2016 01:41:34 America/Chicago] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'alpha'@'localhost' (using password: YES) in /home/ssttkkci/public_html/Jump/login.php on line 10
+[20-Nov-2016 01:41:34 America/Chicago] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'alpha'@'localhost' (using password: YES) in /home/ssttkkci/public_html/Jump/login.php on line 10
+[20-Nov-2016 01:41:36 America/Chicago] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'alpha'@'localhost' (using password: YES) in /home/ssttkkci/public_html/Jump/login.php on line 10
+[20-Nov-2016 01:41:36 America/Chicago] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'alpha'@'localhost' (using password: YES) in /home/ssttkkci/public_html/Jump/login.php on line 10
+[20-Nov-2016 01:42:05 America/Chicago] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'alpha'@'localhost' (using password: YES) in /home/ssttkkci/public_html/Jump/login.php on line 10
+[20-Nov-2016 01:42:25 America/Chicago] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'alpha'@'localhost' (using password: YES) in /home/ssttkkci/public_html/Jump/login.php on line 10
+[18-Feb-2017 03:36:52 America/Chicago] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'alpha'@'localhost' (using password: YES) in /home/ssttkkci/public_html/Jump/login.php on line 10
+[18-Feb-2017 03:37:00 America/Chicago] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'alpha'@'localhost' (using password: YES) in /home/ssttkkci/public_html/Jump/login.php on line 10

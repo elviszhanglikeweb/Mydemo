@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <title>W3C-MOOC</title>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Demo.css" type="text/css" rel="stylesheet">
+    <link href="swiper-3.3.1.min.css" type="text/css" rel="stylesheet">
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="swiper-3.3.1.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="Demo.js"></script>
+    <style>
+            body{
+                height: 100%;
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+            }
+    </style>
+</head>
+<body>
+<div class="Thewholepage"  id="alpha" style="display: none">
+    <!--用来表示标题栏-->
+    <div class="Thetittle">
+        <a href="http://www.w3.org/"><img src="Image/pic_html5%5B1%5D.gif" style="margin-left: 15%;margin-top: 20px;height:36px;width: 36px;float: left;display: inline-block"></a>
+        <p style="font-family:cursive;margin-left: 1%;margin-top: 20px;font-size:x-large;width: 36%;float: left;display: inline-block">W3C-MOOC</p>
+        <div  class="righttittle" style="margin-left: 70%;width:25%;height: 100%;overflow: hidden;padding-top: 1%;">
+            <div class="tittlewords" >
+                <a  id="change" class="arighttittle" style="font-family:Georgia;font-size:large;text-decoration: none;color: #000000;">登陆/注册</a>
+                <a  class="arighttittle" style="font-family:Georgia;font-size:large;text-decoration: none;color: #000000;">我的课程</a>
+                <a  class="arighttittle" style="font-family:Georgia;font-size:large;text-decoration: none;color: #000000;">我的消息</a>
+                <a  class="arighttittle" style="font-family:Georgia;font-size:large;text-decoration: none;color: #000000;">购物车</a>
+            </div>
+        </div>
+    </div>
+    <!--用来展示滑动块以及swiper-->
+    <div class="Thefirstcontainer">
+        <div class="justcontainer" style="width: 100%;height: 440px;">
+            <div class="rightcontrolbutton" style="width: 10%;height: 440px;background-color: #474A4B;display: inline-block;position: absolute;margin-left: 74%;opacity: 0.9">
+                <div class="rightcontrolbutton1" style="width: 100%;height: 50%;">
+                    <center> <h1 style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;color: white;opacity: 1;padding-top: 5%;font-size: medium;margin: 0px;">下载官方APP</h1>
+                        <img style="padding-top: 5%" src="Image/6630234335885341999.jpg.png"></center>
+                </div>
+                <div class="rightcontrolbutton2" style="width: 100%;height: 50%;">
+                    <center> <h1 style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;color: white;opacity: 1;padding-top: 5%;font-size: medium;margin: 0px;">官方微信公众号</h1>
+                        <img style="padding-top: 5%;height: 140px;width: 140px" src="Image/20160923135528.png"></center>
+                </div>
+            </div>
+            <div class="controlbutton" style="width: 10%;height: 440px;background-color: #474A4B;display: inline-block;margin-left:14%;position:absolute;opacity: 0.9">
+                <div class="aboutIT" style="width: 100%;height: 16%;border-bottom:1px solid #ffffff;">
+                    <h1 id="aboutIT1" style="margin:0px;font-family:  Microsoft YaHei ;color: white;padding-top:1%;opacity: 1;margin-left: 10%;padding-top:5%;font-size: large">IT/互联网</h1>
+                    <a id="aboutIT2" style="margin:0px;font-family:  Microsoft YaHei ;color: white;opacity: 1;margin-left:10%;margin-bottom: 10%;font-size: medium;padding-bottom: 10%">软件开发</a>
+                    <a id="aboutIT3" style="margin:0px;font-family:  Microsoft YaHei;color: white;opacity: 1;margin-left: 10%;font-size: medium">前端开发</a>
+                </div>
+                <div class="aboutID" style="width: 100%;height: 16%;border-bottom:1px solid #ffffff;">
+                    <h1 id="aboutID1" style="margin:0px;font-family:  Microsoft YaHei;color: white;padding-top:1%;opacity: 1;padding-top:5%;margin-left: 10%;font-size: large">设计创作</h1>
+                    <a id="aboutID2" style="margin:0px;font-family:  Microsoft YaHei;color: white;opacity: 1;margin-left: 10%;font-size: medium">平面设计</a>
+                    <a id="aboutID3" style="margin:0px;font-family:  Microsoft YaHei;color: white;opacity: 1;margin-left: 10%;font-size: medium">影视特效</a>
+                </div>
+                <div class="aboutIA" style="width: 100%;height: 16%;border-bottom:1px solid #ffffff">
+                    <h1 id="aboutIA1" style="margin:0px;font-family:  Microsoft YaHei;color: white;opacity: 1;padding-top:5%;margin-left: 10%;font-size: large">职场提升</h1>
+                    <a id="aboutIA2" style="margin:0px;font-family:  Microsoft YaHei;color: white;opacity: 1;margin-left: 10%;font-size: medium">办公技能</a>
+                    <a id="aboutIA3" style="margin:0px;font-family:  Microsoft YaHei;color: white;opacity: 1;margin-left: 10%;font-size: medium">求职应聘</a>
+                </div>
+                <div class="aboutIF" style="width: 100%;height: 16%;border-bottom:1px solid #ffffff">
+                    <h1 id="aboutIF1" style="margin:0px;font-family:  Microsoft YaHei;color: white;opacity: 1;padding-top:5%;margin-left: 10%;font-size: large">语言/留学</h1>
+                    <a id="aboutIF2" style="margin:0px;font-family:  Microsoft YaHei;color: white;opacity: 1;margin-left: 10%;font-size: medium">口语</a>
+                    <a id="aboutIF3" style="margin:0px;font-family:  Microsoft YaHei;color: white;opacity: 1;margin-left: 10%;font-size: medium">雅思</a>
+                    <a id="aboutIF4" style="margin:0px;font-family:  Microsoft YaHei;color: white;opacity: 1;margin-left: 10%;font-size: medium">托福</a>
+                </div>
+                <div class="aboutST" style="width: 100%;height: 16%;border-bottom:1px solid #ffffff">
+                    <h1 ID="aboutST1" style="margin:0px;font-family:  Microsoft YaHei;color: white;opacity: 1;padding-top:5%;margin-left: 10%;font-size: large">中小学</h1>
+                    <a ID="aboutST2"style="margin:0px;font-family:  Microsoft YaHei;color: white;opacity: 1;margin-left: 10%;font-size: medium">小学奥数</a>
+                    <a ID="aboutST3"style="margin:0px;font-family:  Microsoft YaHei;color: white;opacity: 1;margin-left: 10%;font-size: medium">英语启蒙</a>
+                </div>
+                <div class="aboutAT" style="width: 100%;height: 19%;">
+                    <h1 ID="aboutAT1" style="margin:0px;font-family:  Microsoft YaHei;color: white;opacity: 1;padding-top:5%;margin-left: 10%;font-size: large">兴趣生活</h1>
+                    <a ID="aboutAT2"style="margin:0px;font-family:  Microsoft YaHei;color: white;opacity: 1;margin-left: 10%;font-size: medium">摄影</a>
+                    <a ID="aboutAT3"style="margin:0px;font-family:  Microsoft YaHei;color: white;opacity: 1;margin-left: 10%;font-size: medium">乐器</a>
+                    <a ID="aboutAT4"style="margin:0px;font-family:  Microsoft YaHei;color: white;opacity: 1;margin-left: 10%;font-size: medium">烹饪</a>
+                </div>
+            </div>
+            <div class="swiper-container" style="margin-left: 24%">
+                <div class="aboutITdetail" style="width: 960px;height: 440px;display: none;background-color: white;opacity: 0.9">
+                    <ul style="list-style-type:none;margin: 0px;">
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">基础语言&nbsp&nbsp|&nbspJava&nbsp/&nbspC&nbsp/&nbspC++&nbsp/&nbspPython&nbsp/&nbspC#&nbsp/&nbspPHP&nbsp/&nbsp其他</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">软件开发&nbsp&nbsp|&nbspIOS&nbsp/&nbspAndriod&nbsp/&nbspWindows Phone&nbsp/&nbsp手游&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">前端开发&nbsp&nbsp|&nbspHTML/CSS&nbsp/&nbspJavascript&nbsp/&nbspjQuery&nbsp/&nbsp开发框架&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">IT/硬件&nbsp&nbsp |&nbsp操作系统&nbsp/&nbsp运维管理&nbsp/&nbsp硬件管理&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">其他相关&nbsp&nbsp|&nbsp软件测试&nbsp/&nbsp物联网安全&nbsp/&nbsp信息安全&nbsp</li>
+                    </ul>
+                </div>
+                <div class="aboutIDdetail" style="width: 960px;height: 440px;display: none;background-color: white;opacity: 0.9">
+                    <ul style="list-style-type:none;margin: 0px;">
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">设计软件&nbsp&nbsp|&nbspPhotoshop&nbsp/&nbspFlash&nbsp/&nbspMAYA&nbsp/&nbspAutoCAD&nbsp/&nbsp3DMAX&nbsp/&nbspCorelDRAW&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbspDreamweaver&nbsp/&nbspAfter Effects&nbsp/&nbsp其他软件&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">影视后期&nbsp&nbsp|&nbsp影视特效&nbsp/&nbsp后期剪辑&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">用户体验&nbsp&nbsp|&nbsp交互设计&nbsp/&nbspUI视觉&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">游戏设计&nbsp&nbsp|&nbsp角色设计&nbsp/&nbsp特效设计&nbsp/&nbsp场景概念设计&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">动漫设计&nbsp&nbsp|&nbsp原画&nbsp/&nbsp插画&nbsp/&nbsp漫画&nbsp/&nbsp角色动画设计&nbsp/&nbsp后期特效设计&nbsp/&nbsp模型材质设计&nbsp</li>
+                    </ul>
+                </div>
+                <div class="aboutIAdetail" style="width: 960px;height: 440px;display: none;background-color: white;opacity: 0.9">
+                    <ul style="list-style-type:none;margin: 0px;">
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">办公技能&nbsp&nbsp|&nbspPPT&nbsp/&nbspExcel&nbsp/&nbspWord&nbsp/&nbsp更多软件&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">求职应聘&nbsp&nbsp|&nbsp求职简历&nbsp/&nbsp应聘简历&nbsp/&nbsp职业规划&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">职场技能&nbsp&nbsp|&nbsp电脑基础&nbsp/&nbsp商务礼仪&nbsp/&nbsp谈判沟通&nbsp/&nbsp演讲与口才&nbsp/&nbsp领导力培养&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">个人管理&nbsp&nbsp|&nbsp时间管理&nbsp/&nbsp知识管理&nbsp/&nbsp情绪管理&nbsp</li>
+                    </ul>
+                </div>
+                <div class="aboutIFdetail" style="width: 960px;height: 440px;display: none;background-color: white;opacity: 0.9">
+                    <ul style="list-style-type:none;margin: 0px;">
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">实用英语&nbsp&nbsp|&nbsp英语入门&nbsp/&nbsp常用语法&nbsp/&nbsp流利口语&nbsp/&nbsp海外文化&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">英语考试&nbsp&nbsp|&nbsp四六级&nbsp/&nbsp专业四八级&nbsp/&nbspBEC认证考试&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">出国留学&nbsp&nbsp|&nbsp雅思&nbsp/&nbsp托福&nbsp/&nbspSAT&nbsp/&nbspGRE&nbsp/&nbsp留学准备&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">小语种&nbsp&nbsp&nbsp|&nbsp法语&nbsp/&nbsp德语&nbsp/&nbsp俄语&nbsp/&nbsp西班牙语&nbsp/&nbsp意大利语&nbsp</li>
+                    </ul>
+                </div>
+                <div class="aboutSTdetail" style="width: 960px;height: 440px;display: none;background-color: white;opacity: 0.9">
+                    <ul style="list-style-type:none;margin: 0px;">
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">市场营销&nbsp&nbsp|&nbsp网络营销&nbsp/&nbsp电子商务&nbsp/&nbsp品牌推广&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">金融投资&nbsp&nbsp|&nbsp理财指导&nbsp/&nbsp基金&nbsp/&nbsp股票&nbsp/&nbsp期货&nbsp/&nbsp外汇&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">管理&nbsp&nbsp&nbsp&nbsp|&nbsp人力资源&nbsp/&nbsp项目管理&nbsp/&nbsp财务管理&nbsp/&nbsp信息管理&nbsp/&nbsp行政管理&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">法律&nbsp&nbsp&nbsp&nbsp|&nbsp知识产权&nbsp/&nbsp劳动法&nbsp/&nbsp公司法&nbsp/&nbsp更多&nbsp</li>
+                    </ul>
+                </div>
+                <div class="aboutATdetail" style="width: 960px;height: 440px;display: none;background-color: white;opacity: 0.9">
+                    <ul style="list-style-type:none;margin: 0px;">
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">摄影&nbsp&nbsp|&nbsp摄影基础&nbsp/&nbsp人像摄影&nbsp/&nbsp风光摄影&nbsp/&nbsp电商摄影&nbsp/&nbsp手机摄影&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">音乐&nbsp&nbsp|&nbsp乐器&nbsp/&nbsp唱歌&nbsp/&nbsp编曲&nbsp/&nbsp音乐基础&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">健康&nbsp&nbsp|&nbsp健身&nbsp/&nbsp体育&nbsp/&nbsp舞蹈&nbsp/&nbsp武术&nbsp/&nbsp养生&nbsp</li>
+                        <li style="font-size: medium;margin:0px;padding-top: 3%;color: #00B38A;font-family:sans-serif">亲子&nbsp&nbsp|&nbsp育儿方法&nbsp/&nbsp幼儿学习&nbsp/&nbsp儿童运动&nbsp</li>
+                    </ul>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="ss1"><img src="Image/3ef8c69c-d5f6-4997-9594-607a41b5c5110%5B1%5D.jpg"></div>
+                    <div class="swiper-slide" id="ss2"><img src="Image/90c7968c-3a86-4a83-928d-35e0acd2d92a9%5B1%5D.jpg"></div>
+                    <div class="swiper-slide" id="ss3"><img src="Image/dc3484a4-6711-4410-930f-b4a75ca55f170%5B1%5D.jpg"></div>
+                    <div class="swiper-slide" id="ss4"><img src="Image/2f2ad06b-c116-4e0a-a5f9-ce29bbb43fba)[1].jpg"></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    <div class="Thesecondcontainer">
+        <h1 id="classes" style="font-family: Microsoft YaHei;font-size: x-large;margin: 0px;padding-left: 10%;padding-top: 1%">推荐课程</h1>
+        <div class="listclasses" style="margin-left:10%;padding-top: 2%;height: 85%;width: 80%;">
+            <div class="listclasses1" style="height:45%;width: auto;display: inline-block;background-color: #ffffff;margin-left: 0%;border:1px solid #f5f5f5;box-shadow: 3px 3px #f5f5f5">
+                <a href="#"  style="text-decoration: none;color: black"><img   id="listclasses1image" src="Image/one/D14B1FD5A403BAFBA652D4D7392CB957[1].png" style="width: 223px;height: 124px" >
+                <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">揭开HTML5的神秘面纱</p>
+                <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">前端学院</p></a>
+                <div class="people" style="margin-left:53%;margin-top:2%;height: 24px;width: 100px;border-radius: 10%;">
+                    <img style="padding-top:3%;margin: 0px" src="Image/person_people_16.846560846561px_1189669_easyicon.net.png">
+                    <span style="padding-left:5%;margin: 0px;font-size: 6px;font-family: cursive">1231人参加</span>
+                </div>
+            </div>
+            <div class="listclasses2" style="margin-left:1%;height:45%;width: auto;background-color: #ffffff;display: inline-block;border:1px solid #f5f5f5;box-shadow: 3px 3px #f5f5f5">
+                <a href="#"  style="text-decoration: none;color: black"><img  id="listclasses2image" src="Image/one/EIAXI3V5.jpg" style="width: 223px;height: 124px" >
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">IOS开发等你加入</p>
+                    <p  style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">移动学院</p></a>
+                <div class="people" style="margin-left:53%;margin-top:2%;height: 24px;width: 100px;border-radius: 10%;">
+                    <img style="padding-top:3%;margin: 0px" src="Image/person_people_16.846560846561px_1189669_easyicon.net.png">
+                    <span style="padding-left:5%;margin: 0px;font-size: 6px;font-family: cursive">768人参加</span>
+                </div>
+            </div>
+            <div class="listclasses3" style="margin-left:1%;height:45%;width: auto;background-color: #ffffff;display: inline-block;border:1px solid #f5f5f5;box-shadow: 3px 3px #f5f5f5">
+                <a href="#"  style="text-decoration: none;color: black"><img  id="listclasses3image" src="Image/one/T0K7D4V0.jpg" style="width: 223px;height: 124px" >
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">最火最热的安卓开发</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">移动学院</p></a>
+                <div class="people" style="margin-left:53%;margin-top:2%;height: 24px;width: 100px;border-radius: 10%;">
+                    <img style="padding-top:3%;margin: 0px" src="Image/person_people_16.846560846561px_1189669_easyicon.net.png">
+                    <span style="padding-left:5%;margin: 0px;font-size: 6px;font-family: cursive">3260人参加</span>
+                </div>
+            </div>
+            <div class="listclasses4" style="margin-left:1%;height:45%;width: auto;background-color: #ffffff;display: inline-block;border:1px solid #f5f5f5;box-shadow: 3px 3px #f5f5f5">
+                <a href="#"  style="text-decoration: none;color: black"><img  id="listclasses4image" src="Image/one/NRQ07GF3.jpg" style="width: 223px;height: 124px" >
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">最火的手游开发</p>
+                    <p  style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">移动学院</p></a>
+                <div class="people" style="margin-left:53%;margin-top:2%;height: 24px;width: 100px;border-radius: 10%;">
+                    <img style="padding-top:3%;margin: 0px" src="Image/person_people_16.846560846561px_1189669_easyicon.net.png">
+                    <span style="padding-left:5%;margin: 0px;font-size: 6px;font-family: cursive">685人参加</span>
+                </div>
+            </div>
+            <div class="listclasses5" style="margin-left:1%;height:45%;width: auto;background-color: #ffffff;display: inline-block;border:1px solid #f5f5f5;box-shadow: 3px 3px #f5f5f5">
+                <a href="#"  style="text-decoration: none;color: black"><img  id="listclasses5image" src="Image/one/YUYPDF1S.png" style="width: 223px;height: 124px" >
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">C#开发把握新方向</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">基础语言</p></a>
+                <div class="people" style="margin-left:53%;margin-top:2%;height: 24px;width: 100px;border-radius: 10%;">
+                    <img style="padding-top:3%;margin: 0px" src="Image/person_people_16.846560846561px_1189669_easyicon.net.png">
+                    <span style="padding-left:5%;margin: 0px;font-size: 6px;font-family: cursive">2234人参加</span>
+                </div>
+            </div>
+            <div class="listclasses6" style="margin-top:2%;margin-left:0%;height:45%;width: auto;background-color: #ffffff;display: inline-block;border:1px solid #f5f5f5;box-shadow: 3px 3px #f5f5f5">
+                <a href="#"  style="text-decoration: none;color: black"><img  id="listclasses6image" src="Image/one/381717D3291C67CE851DB83458EF89A5[1].png" style="width: 223px;height: 124px" >
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">C语言也能开发网页</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">基础语言</p></a>
+                <div class="people" style="margin-left:53%;margin-top:2%;height: 24px;width: 100px;border-radius: 10%;">
+                    <img style="padding-top:3%;margin: 0px" src="Image/person_people_16.846560846561px_1189669_easyicon.net.png">
+                    <span style="padding-left:5%;margin: 0px;font-size: 6px;font-family: cursive">2664人参加</span>
+                </div>
+            </div>
+            <div class="listclasses7" style="margin-left:1%;height:45%;width: auto;background-color: #ffffff;display: inline-block;border:1px solid #f5f5f5;box-shadow: 3px 3px #f5f5f5">
+                <a href="#"  style="text-decoration: none;color: black"><img  id="listclasses7image" src="Image/one/BB89F57B6ACD064D2FA619C390C1D510[1].jpg" style="width: 223px;height: 124px" >
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">造就就明星公开课</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">造就TALK</p></a>
+                <div class="people" style="margin-left:53%;margin-top:2%;height: 24px;width: 100px;border-radius: 10%;">
+                    <img style="padding-top:3%;margin: 0px" src="Image/person_people_16.846560846561px_1189669_easyicon.net.png">
+                    <span style="padding-left:5%;margin: 0px;font-size: 6px;font-family: cursive">6664人参加</span>
+                </div>
+            </div>
+            <div class="listclasses8" style="margin-left:1%;height:45%;width: auto;background-color: #ffffff;display: inline-block;border:1px solid #f5f5f5;box-shadow: 3px 3px #f5f5f5">
+                <a href="#"  style="text-decoration: none;color: black"><img  id="listclasses8image" src="Image/one/7EC6339F3683CDD75001ABA4F558EFF1[1].png" style="width: 223px;height: 124px" >
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">AxureRP7.0标准教程</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">原题库</p></a>
+                <div class="people" style="margin-left:53%;margin-top:2%;height: 24px;width: 100px;border-radius: 10%;">
+                    <img style="padding-top:3%;margin: 0px" src="Image/person_people_16.846560846561px_1189669_easyicon.net.png">
+                    <span style="padding-left:5%;margin: 0px;font-size: 6px;font-family: cursive">2864人参加</span>
+                </div>
+            </div>
+            <div class="listclasses9" style="margin-left:1%;height:45%;width: auto;background-color: #ffffff;display: inline-block;border:1px solid #f5f5f5;box-shadow: 3px 3px #f5f5f5">
+                <a href="#"  style="text-decoration: none;color: black"><img  id="listclasses9image" src="Image/one/69B98AA36D029B7E19FAB4C9B028F7E6[1].png" style="width: 223px;height: 124px" >
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">备战四六级</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">北京新东方四六级</p></a>
+                <div class="people" style="margin-left:53%;margin-top:2%;height: 24px;width: 100px;border-radius: 10%;">
+                    <img style="padding-top:3%;margin: 0px" src="Image/person_people_16.846560846561px_1189669_easyicon.net.png">
+                    <span style="padding-left:5%;margin: 0px;font-size: 6px;font-family: cursive">4264人参加</span>
+                </div>
+            </div>
+            <div class="listclasses10" style="margin-left:1%;height:45%;width: auto;background-color: #ffffff;display: inline-block;border:1px solid #f5f5f5;box-shadow: 3px 3px #f5f5f5">
+                <a href="#"  style="text-decoration: none;color: black"><img  id="listclasses10image" src="Image/one/VQC8DD7I.jpg" style="width: 223px;height: 124px" >
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">冲刺网络营销</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">营销商务</p></a>
+                <div class="people" style="margin-left:53%;margin-top:2%;height: 24px;width: 100px;border-radius: 10%;">
+                    <img style="padding-top:3%;margin: 0px" src="Image/person_people_16.846560846561px_1189669_easyicon.net.png">
+                    <span style="padding-left:5%;margin: 0px;font-size: 6px;font-family: cursive">5464人参加</span>
+                </div>
+            </div>
+            </div>
+        </div>
+    <div class="Thethirdcontainer">
+        <h1 style="font-family: Microsoft YaHei;font-size:x-large;margin: 0px;padding-left: 10%;padding-top: 1%">IT/互联网
+            <span class="Thesecondcontainertittle" style="font-size:medium;margin: 0px;padding-left: 1%;padding-top: 1%">移动开发</span>
+            <span class="Thesecondcontainertittle" style="font-size:medium;margin: 0px;padding-left: 1%;padding-top: 1%">前端开发</span>
+            <span class="Thesecondcontainertittle" style="font-size:medium;margin: 0px;padding-left: 1%;padding-top: 1%">编程语言</span>
+        </h1>
+        <div style="display:inline-block;margin-left:10%;margin-top: 1%;height: 390px;width: 225px">
+            <img src="Image/two/TW2140TA.png" >
+        </div>
+        <div class="thearange" style="position:absolute;display:inline-block;margin-left:5%;margin-top: 1%;height: 390px;width: 225px">
+            <div style="height: 50%;">
+                <img src="Image/two/QLUHGHFW.jpg" >
+                <a href="#"  style="text-decoration: none;color: black">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">深入学习 MySQL 数据库</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">Python开发</p></a>
+            </div>
+            <div style="height: 50%;margin-top: 5%">
+                <img src="Image/two/ADKV6VTW.png" >
+                <a href="#"  style="text-decoration: none;color: black">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">Python数据挖掘实战</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">小蚊子数据分析</p></a>
+            </div>
+        </div>
+        <div style="position:absolute;display:inline-block;margin-left:21%;margin-top: 1%;height: 390px;width: 225px">
+            <div style="height: 50%;">
+                <img src="Image/two/F8PMXABQ.jpg">
+                <a href="#"  style="text-decoration: none;color: black">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">HTML5+CSS3快速入门</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">麦子学院</p></a>
+            </div>
+            <div style="height: 50%;margin-top: 5%">
+                <img src="Image/two/HEJHUO3Y.jpg" >
+                <a href="#"  style="text-decoration: none;color: black">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">微信运营全攻略</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">唐三藏shifu</p></a>
+            </div>
+        </div>
+        <div class="thearange2" style="position:absolute;display:inline-block;margin-left:38%;margin-top: 1%;height: 390px;width: 225px">
+            <div style="width:100%;height:142px;background-color: #00a503">
+                   <a href="#" style="text-decoration: none">
+                       <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 2%;color: #ffffff;font-family: cursive">阿里工程师带你学习nodejs</p>
+                       <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 15%;color: #ffffff;font-family: cursive">8小时学会HTML网页开发</p>
+                       <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 28%;color: #ffffff;font-family: cursive">CMS文章内容管理系统实战</p>
+                       <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 41%;color: #ffffff;font-family: cursive">如何搭建自己的论坛系统</p>
+                   </a>
+            </div>
+            <div style="position:absolute;height:248px;width:225px;">
+                <img src="Image/two/51SPCXU1.png">
+            </div>
+        </div>
+</div>
+    <div class="Thethirdcontainer">
+        <h1 style="font-family: Microsoft YaHei;font-size:x-large;margin: 0px;padding-left: 10%;padding-top: 1%">设计创作
+            <span class="Thesecondcontainertittle" style="font-size:medium;margin: 0px;padding-left: 1%;padding-top: 1%">Photoshop</span>
+            <span class="Thesecondcontainertittle" style="font-size:medium;margin: 0px;padding-left: 1%;padding-top: 1%">设计软件</span>
+            <span class="Thesecondcontainertittle" style="font-size:medium;margin: 0px;padding-left: 1%;padding-top: 1%">平面设计</span>
+        </h1>
+        <div style="display:inline-block;margin-left:10%;margin-top: 1%;height: 409px;width: 470px;">
+            <img  src="Image/two/0XW1U31P.png" >
+            <div style="margin-top: 5%;height: 225px;width: 470px;">
+                <div style="width: 50%;height: 225px;display: inline-block">
+                    <img src="Image/two/A816B42C3E5D83270BA07B87882CF921[1].jpg">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">游戏UI案例制作探秘</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">织梦网</p></a>
+                </div>
+                <div style="float:right;width: 50%;height: 225px;">
+                    <img style="margin-left: 4%" src="Image/two/B4DF8E84CBCE01F914EDC8952BF0540F[1].jpg">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">Mugeda教你制作高级H5动画</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">Mugeda木疙瘩</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="thearange3" style="position:absolute;display:inline-block;margin-left:7%;margin-top: 1%;height: 390px;width: 225px">
+            <div style="height: 50%;">
+                <img src="Image/two/31A5CAC3D8CA0AFDBC9CA3FEE1672EB4[1].jpg">
+                <a href="#"  style="text-decoration: none;color: black">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">火箭升空小动画制作教程</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">鲤鱼carp</p></a>
+            </div>
+            <div style="height: 50%;margin-top: 5%">
+                <img src="Image/two/CC4A80C7A9CD0BD8291776C4717B39F2[1].jpg" >
+                <a href="#"  style="text-decoration: none;color: black">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">教你快速使用交互工具</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">IDC创新设计中心</p></a>
+            </div>
+        </div>
+        <div style="position:absolute;display:inline-block;margin-left:25%;margin-top: 1%;height: 390px;width: 225px">
+            <div style="width:100%;height:142px;background-color: #f65d58">
+                <a href="#" style="text-decoration: none">
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 2%;color: #ffffff;font-family: cursive">用表情包对话微信聊天</p>
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 15%;color: #ffffff;font-family: cursive">8分钟，让你大变身</p>
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 28%;color: #ffffff;font-family: cursive">教你用CorelDRAW玩转创意</p>
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 41%;color: #ffffff;font-family: cursive">PS工具玩到停不下来</p>
+                </a>
+            </div>
+            <div style="position:absolute;height:248px;width:225px;">
+                <img src="Image/two/AFWIYPJH.png">
+            </div>
+        </div>
+    </div>
+    <div class="Thethirdcontainer">
+        <h1 style="font-family: Microsoft YaHei;font-size:x-large;margin: 0px;padding-left: 10%;padding-top: 1%">职场提升
+            <span class="Thesecondcontainertittle" style="font-size:medium;margin: 0px;padding-left: 1%;padding-top: 1%">办公技能</span>
+            <span class="Thesecondcontainertittle" style="font-size:medium;margin: 0px;padding-left: 1%;padding-top: 1%">求职应聘</span>
+            <span class="Thesecondcontainertittle" style="font-size:medium;margin: 0px;padding-left: 1%;padding-top: 1%">公务员</span>
+        </h1>
+        <div style="display:inline-block;margin-left:10%;margin-top: 1%;height: 390px;width: 225px">
+            <img src="Image/two/N67NIV64.png" >
+        </div>
+        <div class="thearange" style="position:absolute;display:inline-block;margin-left:5%;margin-top: 1%;height: 390px;width: 225px">
+            <div style="height: 50%;">
+                <img src="Image/two/1FEE9C0AC3EB48FEDDB30360C87967D1[1].jpg" >
+                <a href="#"  style="text-decoration: none;color: black">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">学什么数学</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">鸭梨大学</p></a>
+            </div>
+            <div style="height: 50%;margin-top: 5%">
+                <img src="Image/two/6E1881081331DBE3E30F3C5C969D28F2[1].jpg" >
+                <a href="#"  style="text-decoration: none;color: black">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">实验万事屋SCI写作教程</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">李莫愁博士</p></a>
+            </div>
+        </div>
+        <div style="position:absolute;display:inline-block;margin-left:21%;margin-top: 1%;height: 390px;width: 225px">
+            <div style="height: 50%;">
+                <img src="Image/two/A185C8B5FE39FFA68B996881F2063656[1].jpg">
+                <a href="#"  style="text-decoration: none;color: black">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">CPA考试-经济法</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">高顿网校</p></a>
+            </div>
+            <div style="height: 50%;margin-top: 5%">
+                <img src="Image/two/WUJNVZAN.png" >
+                <a href="#"  style="text-decoration: none;color: black">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">手把手教你做霸气简历</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">实习问</p></a>
+            </div>
+        </div>
+        <div class="thearange2" style="position:absolute;display:inline-block;margin-left:38%;margin-top: 1%;height: 390px;width: 225px">
+            <div style="width:100%;height:142px;background-color: #AB7FD5">
+                <a href="#" style="text-decoration: none">
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 2%;color: #ffffff;font-family: cursive">提高办公效率的键盘操作技巧</p>
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 15%;color: #ffffff;font-family: cursive">5步写出1秒打动HR的简历</p>
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 28%;color: #ffffff;font-family: cursive">21天成为会说话的高手</p>
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 41%;color: #ffffff;font-family: cursive">给职场新人的Word课</p>
+                </a>
+            </div>
+            <div style="position:absolute;height:248px;width:225px;">
+                <img src="Image/two/V9C7N7KJ.png">
+            </div>
+        </div>
+    </div>
+    <div class="Thethirdcontainer">
+        <h1 style="font-family: Microsoft YaHei;font-size:x-large;margin: 0px;padding-left: 10%;padding-top: 1%">语言/留学
+            <span class="Thesecondcontainertittle" style="font-size:medium;margin: 0px;padding-left: 1%;padding-top: 1%">实用英语</span>
+            <span class="Thesecondcontainertittle" style="font-size:medium;margin: 0px;padding-left: 1%;padding-top: 1%">雅思</span>
+            <span class="Thesecondcontainertittle" style="font-size:medium;margin: 0px;padding-left: 1%;padding-top: 1%">托福</span>
+        </h1>
+        <div style="display:inline-block;margin-left:10%;margin-top: 1%;height: 409px;width: 470px;">
+            <img  src="Image/two/GEIOR34S.png" >
+            <div style="margin-top: 5%;height: 225px;width: 470px;">
+                <div style="width: 50%;height: 225px;display: inline-block">
+                    <img src="Image/two/1BD863EE5589C6F624D9FFF8898A8603[1].png">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">托福口语保90争100</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">新航道在线</p></a>
+                </div>
+                <div style="float:right;width: 50%;height: 225px;">
+                    <img style="margin-left: 4%" src="Image/two/E45145566965FF8535FDB6E56646EAC8[1].jpg">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">实用餐厅英语</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">美联英语</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="thearange3" style="position:absolute;display:inline-block;margin-left:7%;margin-top: 1%;height: 390px;width: 225px">
+            <div style="height: 50%;">
+                <img src="Image/two/GGI5GJHO.jpg">
+                <a href="#"  style="text-decoration: none;color: black">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">外教教你说雅思</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">新东方在线</p></a>
+            </div>
+            <div style="height: 50%;margin-top: 5%">
+                <img src="Image/two/GB715CO4.jpg" >
+                <a href="#"  style="text-decoration: none;color: black">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">“词源法”雅思词汇精讲</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">摩西英语</p></a>
+            </div>
+        </div>
+        <div style="position:absolute;display:inline-block;margin-left:25%;margin-top: 1%;height: 390px;width: 225px">
+            <div style="width:100%;height:142px;background-color: #b32d59">
+                <a href="#" style="text-decoration: none">
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 2%;color: #ffffff;font-family: cursive">留学你必须知道的事儿</p>
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 15%;color: #ffffff;font-family: cursive">如何高效备战托福考试</p>
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 28%;color: #ffffff;font-family: cursive">八节课开启英语思维之门</p>
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 41%;color: #ffffff;font-family: cursive">说出地道的美式英语</p>
+                </a>
+            </div>
+            <div style="position:absolute;height:248px;width:225px;">
+                <img src="Image/two/R0NI4J0P.png">
+            </div>
+        </div>
+    </div>
+    <div class="Thethirdcontainer">
+        <h1 style="font-family: Microsoft YaHei;font-size:x-large;margin: 0px;padding-left: 10%;padding-top: 1%">中小学
+            <span class="Thesecondcontainertittle" style="font-size:medium;margin: 0px;padding-left: 1%;padding-top: 1%">小学奥数</span>
+            <span class="Thesecondcontainertittle" style="font-size:medium;margin: 0px;padding-left: 1%;padding-top: 1%">英语启蒙</span>
+            <span class="Thesecondcontainertittle" style="font-size:medium;margin: 0px;padding-left: 1%;padding-top: 1%">高中数学</span>
+        </h1>
+        <div style="display:inline-block;margin-left:10%;margin-top: 1%;height: 390px;width: 225px">
+            <img src="Image/two/W1E0PQZ3.png" >
+        </div>
+        <div class="thearange" style="position:absolute;display:inline-block;margin-left:5%;margin-top: 1%;height: 390px;width: 225px">
+            <div style="height: 50%;">
+                <img src="Image/two/0da5e06f-a750-4b1a-823e-c45ba7ad31582[1].jpg" >
+                <a href="#"  style="text-decoration: none;color: black">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">5分钟扫除孩子的负面情绪</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">幸福乐途</p></a>
+            </div>
+            <div style="height: 50%;margin-top: 5%">
+                <img src="Image/two/10a580d3-5c65-4132-b30b-a3d9d60ebfa10[1].jpg" >
+                <a href="#"  style="text-decoration: none;color: black">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">高中快速提分法</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">靠他网</p></a>
+            </div>
+        </div>
+        <div style="position:absolute;display:inline-block;margin-left:21%;margin-top: 1%;height: 390px;width: 225px">
+            <div style="height: 50%;">
+                <img src="Image/two/9c1d9bd2-19de-4baf-a5e3-9da7c8e8489a0[1].jpg">
+                <a href="#"  style="text-decoration: none;color: black">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">15分钟掌握电路结构分析</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">葛景明</p></a>
+            </div>
+            <div style="height: 50%;margin-top: 5%">
+                <img src="Image/two/260da992-8a0e-40d1-a58f-c0e4c8609da0F[1].jpg" >
+                <a href="#"  style="text-decoration: none;color: black">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">高考志愿填报精品课</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">乐学精品课</p></a>
+            </div>
+        </div>
+        <div class="thearange2" style="position:absolute;display:inline-block;margin-left:38%;margin-top: 1%;height: 390px;width: 225px">
+            <div style="width:100%;height:142px;background-color: #707374">
+                <a href="#" style="text-decoration: none">
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 2%;color: #ffffff;font-family: cursive">教你让作文更加生动</p>
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 15%;color: #ffffff;font-family: cursive">学习有趣的英文单词卡</p>
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 28%;color: #ffffff;font-family: cursive">微积分，咱从头开始学!</p>
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 41%;color: #ffffff;font-family: cursive">高中各科学习全规划</p>
+                </a>
+            </div>
+            <div style="position:absolute;height:248px;width:225px;">
+                <img src="Image/two/TTOI025U.png">
+        </div>
+        </div>
+    </div>
+    <div class="Thethirdcontainer">
+        <h1 style="font-family: Microsoft YaHei;font-size:x-large;margin: 0px;padding-left: 10%;padding-top: 1%">兴趣生活
+            <span class="Thesecondcontainertittle" style="font-size:medium;margin: 0px;padding-left: 1%;padding-top: 1%">摄影</span>
+            <span class="Thesecondcontainertittle" style="font-size:medium;margin: 0px;padding-left: 1%;padding-top: 1%">乐器</span>
+            <span class="Thesecondcontainertittle" style="font-size:medium;margin: 0px;padding-left: 1%;padding-top: 1%">烹饪</span>
+        </h1>
+        <div style="display:inline-block;margin-left:10%;margin-top: 1%;height: 409px;width: 470px;">
+            <img  src="Image/two/12TB46W0.png" >
+            <div style="margin-top: 5%;height: 225px;width: 470px;">
+                <div style="width: 50%;height: 225px;display: inline-block">
+                    <img src="Image/two/3F8108C844C4A1778AD5AEA00950A0BC[1].jpg">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">十分钟了解红酒</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">多学多用</p></a>
+                </div>
+                <div style="float:right;width: 50%;height: 225px;">
+                    <img style="margin-left: 4%" src="Image/two/5f2f11ee-0c6f-4ffa-9bfb-f9f0585b8fb21[1].jpg">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">有品位的美食摄影原来这样拍</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">摄影早该这么玩</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="thearange3" style="position:absolute;display:inline-block;margin-left:7%;margin-top: 1%;height: 390px;width: 225px">
+            <div style="height: 50%;">
+                <img src="Image/two/C48A8D07872A58708E13BDE103E1AC89[1].jpg">
+                <a href="#"  style="text-decoration: none;color: black">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">10分钟学会使用单反摄影</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">吴宗恩</p></a>
+            </div>
+            <div style="height: 50%;margin-top: 5%">
+                <img src="Image/two/RPMEP5TR.jpg" >
+                <a href="#"  style="text-decoration: none;color: black">
+                    <p class="Thesecondcontainertittle" style="margin: 0px;font-size: medium;font-family: cursive">民谣吉他入门教程</p>
+                    <p style="margin: 0px;font-size: small;padding-top: 3%;color: #474A4B;font-family: cursive">几分钟网</p></a>
+            </div>
+        </div>
+        <div style="position:absolute;display:inline-block;margin-left:25%;margin-top: 1%;height: 390px;width: 225px">
+            <div style="width:100%;height:142px;background-color: #5540c3">
+                <a href="#" style="text-decoration: none">
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 2%;color: #ffffff;font-family: cursive">创作自己的原创歌曲</p>
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 15%;color: #ffffff;font-family: cursive">10分钟缓解上班疲劳</p>
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 28%;color: #ffffff;font-family: cursive">一份营养美味的早餐</p>
+                    <p style="position:absolute;margin-left:5%;font-size: medium;padding-top: 41%;color: #ffffff;font-family: cursive">从零开始学摄影</p>
+                </a>
+            </div>
+            <div style="position:absolute;height:248px;width:225px;">
+                <img src="Image/two/957T8R50.png">
+            </div>
+        </div>
+    </div>
+    <div class="Thebottomcontainer">
+        <div  style="width:100%;height:80%;">
+            <div  style="margin-left:20%;width:33%;height:100%;float: left;">
+                <img style="float:left;margin-top:5%;margin-left:15%;height: 140px;width: 140px" src="Image/two/6a131b775266c31eb5140c19ea0b0978[1].png">
+                <p class="bottomwords" style="position:absolute;margin-left:15%;color:#ffffff;font-size: medium;padding-top: 2%;font-family: cursive">MOOC连接世界，助力成功。</p>
+                <p class="bottomwords" style="position:absolute;margin-left:15%;color:#ffffff;font-size: medium;padding-top: 4%;font-family: cursive">为您提供海量优质课程</p>
+                <p class="bottomwords" style="position:absolute;margin-left:15%;color:#ffffff;font-size: medium;padding-top: 6%;font-family: cursive">以及创新的在线学习体验</p>
+                <p class="bottomwords" style="position:absolute;margin-left:15%;color:#ffffff;font-size: medium;padding-top: 8%;font-family: cursive">网站的资源均来自于网络</p>
+            </div>
+            <div style="margin-left:0%;width:43%;height:100%;float: right;">
+                <p style="display:inline-block;margin-left:0%;color:#ffffff;font-size: small;padding-top: 7%;font-family: cursive">关于我们</p>
+                <p style="display:inline-block;margin-left:1%;color:#ffffff;font-size: small;padding-top: 7%;font-family: cursive">联系我们</p>
+                <p style="display:inline-table;margin-left:1%;color:#ffffff;font-size: small;padding-top: 7%;font-family: cursive">帮助中心</p>
+                <p style="display:inline-table;margin-left:1%;color:#ffffff;font-size: small;padding-top: 7%;font-family: cursive">内容招募</p>
+                <p style="display:inline-table;margin-left:1%;color:#ffffff;font-size: small;padding-top: 7%;font-family: cursive">意见反馈</p>
+                <p style="display:inline-table;margin-left:1%;color:#ffffff;font-size: small;padding-top: 7%;font-family: cursive">企业服务</p>
+            </div>
+        </div>
+        <center><p  style="margin: 0px;font-size: large;color: #ffffff">Copyright © 2016 ElvisZhang All Rights Reserved.</p></center>
+    </div>
+        <nav id="guide" style="background-color: #333333;visibility: hidden" class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <a href="http://www.w3.org/"><img src="Image/pic_html5%5B1%5D.gif" style="margin-left:15%;margin-top: 10px;height:36px;width: 36px;float: left"></a>
+            <div class="col-lg-6" style="width: 10%;margin-left: 35%;border: 0px;margin-top: 0.5%">
+                <div class="input-group" style="border: 0px;">
+                    <input type="text" class="form-control" value="搜索" style="border: 0px;background-color: #5C5F68;color: #f6f6f6">
+                    <span class="input-group-btn" style="border: 0px;">
+                <button class="btn btn-default" type="button" style="border: 0px;background-color: #5C5F68">
+                    <span class="glyphicon glyphicon-eye-open" style="border: 0px;"></span>
+                </button>
+                   </span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div style="float: right;margin-top:0.5%;margin-right: 15%">
+                    <a href="Register.html" style="font-family:Georgia;font-size:large;text-decoration: none;color: #f6f6f6;">我的课程</a>
+                    <a href="Register.html" style="font-family:Georgia;font-size:large;text-decoration: none;color: #f6f6f6;">我的消息</a>
+                    <a href="Register.html" style="font-family:Georgia;font-size:large;text-decoration: none;color: #f6f6f6;">购物车</a>
+                    <a href="Register.html" style="font-family:Georgia;font-size:large;text-decoration: none;color: #f6f6f6;">登陆/注册</a>
+                </div>
+        </nav>
+    <div id="bottomlabel" style="position:fixed;bottom:0;left:0;height: 10%;width: 100%;background-color: #666666;opacity: 0.8">
+        <center><p id="labelword" style="color:#ffffff;font-size: xx-large;font-family: 'Microsoft YaHei UI'">完成不可能的目标！</p></center>
+        <center><button id="login" style="background-color: #00B38A" type="button" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">登录</button>
+            <button id="register" style="background-color: #FF9600" type="button" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">注册</button></center>
+    </div>
+</div>
+<div class="mobile" style="width: 100%;height:100%;display: none;overflow-x: hidden;margin: 0px;">
+    <div class="mobiletittle" style="height: 7%;width: 100%;">
+        <img src="Image/four/google_plus%5B1%5D.png" style="height: 34px;width: 34px;border-radius:50%;margin-top: 1%;margin-left: 2%;display: inline-block">
+            <div class="form-group" style="width: 69%;display: inline-block;margin-top: 2%;margin-left: 2%">
+                <label for="inputPassword2" class="sr-only">Password</label>
+                <input style="background-color: #EEEFF3;border: none" type="password" class="form-control" id="inputPassword2" placeholder="搜索：如何前端开发">
+            </div>
+        <button type="button" id="justtest" class="btn btn-default btn-lg" style="border: 0px;float: right;margin-top: 1%;">
+            <span class="glyphicon glyphicon-align-justify"></span>
+        </button>
+    </div>
+    <div class="shield" style="margin-top: 3%;height: 93%;width: 100%;opacity: 0.3;position: absolute;z-index:9999;background-color: #000000;display: none"></div>
+    <div class="arrow_box" style="display:none;position:fixed;margin-left: 68%;margin-top: 4%; ">
+        <div style="height: 25%;border-bottom-style: dotted;border-bottom-width: 1px ">
+            <a href="Register.html" style="margin-left:10%;padding-top: 50%;color: #000000;font-size: large;">
+                <span class="glyphicon glyphicon-user" style="height: 80%"></span>
+                我的</a>
+        </div>
+        <div style="height: 25%;border-bottom-style: dotted;border-bottom-width: 1px ">
+            <a style="margin-left:10%;margin-top: 50%;color: #000000;font-size: large;">
+                <span class="glyphicon glyphicon-tasks" style="height: 80%"></span>
+                学习计划</a>
+        </div>
+        <div style="height: 25%;border-bottom-style: dotted;border-bottom-width: 1px ">
+            <a style="margin-left:10%;margin-top: 50%;color: #000000;font-size: large;">
+                <span class="glyphicon glyphicon-home" style="height: 80%"></span>
+                社团</a>
+        </div>
+        <div style="height: 25%;">
+            <a style="margin-left:10%;margin-top: 50%;color: #000000;font-size: large;">
+            <span class="glyphicon glyphicon-list-alt" style="height: 80%"></span>
+                课程表</a>
+        </div>
+    </div>
+    <div class="swiper-container" style="width: 100%;height: 25%;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img style="height: 100%;width: 100%" src="Image/mobile/0 (1).jpg"></div>
+            <div class="swiper-slide" ><img style="height: 100%;width: 100%"src="Image/mobile/0 (2).jpg"></div>
+            <div class="swiper-slide" ><img style="height: 100%;width: 100%"src="Image/mobile/0 (3).jpg"></div>
+            <div class="swiper-slide" ><img style="height: 100%;width: 100%"src="Image/mobile/0.jpg"></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        <!-- 如果需要滚动条 -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <div class="swiper-container2" style="width: 100%;height: 16%;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ><center><img style="margin-top: 5%;height: 40px;width: 40px" src="Image/mobile/0 (4).png"><p style="font-family: 'Microsoft YaHei UI';color:#777777;font-size: medium;padding-left:2%;padding-top: 5%">IT/互联网</p></center></div>
+            <div class="swiper-slide" ><center><img style="margin-top: 5%;height: 40px;width: 40px" src="Image/mobile/0 (1).png"><p style="font-family: 'Microsoft YaHei UI';color:#777777;font-size: medium;padding-left:2%;padding-top: 5%">设计创作</p></center></div>
+            <div class="swiper-slide" ><center><img style="margin-top: 5%;height: 40px;width: 40px" src="Image/mobile/0 (2).png"><p style="font-family: 'Microsoft YaHei UI';color:#777777;font-size: medium;padding-left:2%;padding-top: 5%">语言/留学</p></center></div>
+            <div class="swiper-slide" ><center><img style="margin-top: 5%;height: 40px;width: 40px" src="Image/mobile/0 (3).png"><p style="font-family: 'Microsoft YaHei UI';color:#777777;font-size: medium;padding-left:2%;padding-top: 5%">职业考试</p></center></div>
+            <div class="swiper-slide" ><center><img style="margin-top: 5%;height: 40px;width: 40px" src="Image/mobile/0 (5).png"><p style="font-family: 'Microsoft YaHei UI';color:#777777;font-size: medium;padding-left:2%;padding-top: 5%">升学/考研</p></center></div>
+        </div>
+    </div>
+    <div class="first" style="height: 120%;width: 100%;background-color: #f6f6f6;margin-top: 10%;margin: 0px;">
+        <p style="font-family: 'Microsoft YaHei UI';font-size: large;padding-left:2%;padding-top: 2%">兴趣生活</p>
+        <div style="height: 30%;width: 98%;padding-left:2%;">
+            <img  style="width: 100%;height: 100%" src="Image/mobile/QQ20161006150341.png">
+        </div>
+        <div class="alpha" style="margin-left:2%;margin-top:4%;height: 30%;width: 45%;background-color: #ffffff;display: inline-block">
+            <img style="width: 100%" src="Image/mobile/220.jpg">
+            <p style="font-family: 'Microsoft YaHei UI';color:#000000;font-size: medium;padding-left:2%;padding-top: 10%;margin: 0px">图像精修</p>
+            <p style="font-family: 'Microsoft YaHei UI';color:red;font-size: large;padding-left:2%;padding-top: 5%;margin: 0px">免费</p>
+        </div>
+        <div class="alpha"style="margin-left:6%;margin-top:4%;height: 30%;width: 45%;background-color: #ffffff;display: inline-block">
+            <img style="width: 100%" src="Image/mobile/2.jpg">
+            <p style="font-family: 'Microsoft YaHei UI';color:#000000;font-size: medium;padding-left:2%;padding-top: 10%;margin: 0px">风光摄影教学</p>
+            <p style="font-family: 'Microsoft YaHei UI';color:green;font-size: large;padding-left:2%;padding-top: 5%">免费</p>
+        </div>
+        <div class="alpha"style="margin-left:2%;margin-top:4%;height: 30%;width: 45%;background-color: #ffffff;display: inline-block">
+            <img style="width: 100%" src="Image/mobile/3.jpg">
+            <p style="font-family: 'Microsoft YaHei UI';color:#000000;font-size: medium;padding-left:2%;padding-top: 10%;margin: 0px">素描绘画基础</p>
+            <p style="font-family: 'Microsoft YaHei UI';color:green;font-size: large;padding-left:2%;padding-top: 5%">¥ 300.00</p>
+        </div>
+        <div class="alpha"style="margin-left:6%;margin-top:4%;height: 30%;width: 45%;background-color: #ffffff;display: inline-block">
+            <img style="width: 100%" src="Image/mobile/4.jpg">
+            <p style="font-family: 'Microsoft YaHei UI';color:#000000;font-size: medium;padding-left:2%;padding-top: 10%;margin: 0px">PS大神怎么炼成</p>
+            <p style="font-family: 'Microsoft YaHei UI';color:green;font-size: large;padding-left:2%;padding-top: 5%">免费</p>
+        </div>
+    </div>
+    <div class="two" style=";height: 120%;width: 100%;background-color: #f6f6f6;margin: 0px;">
+        <p style="font-family: 'Microsoft YaHei UI';font-size: large;padding-left:2%;">语言/留学</p>
+        <div style="height: 30%;width: 98%;padding-left:2%;">
+            <img  style="width: 100%;height: 100%" src="Image/mobile/QQ20161008214402.jpg">
+        </div>
+        <div class="alpha" style="margin-left:2%;margin-top:4%;height: 30%;width: 45%;background-color: #ffffff;display: inline-block">
+            <img style="width: 100%" src="Image/mobile/5.jpg">
+            <p style="font-family: 'Microsoft YaHei UI';color:#000000;font-size: medium;padding-left:2%;padding-top: 10%;margin: 0px">纯正口音英语</p>
+
+            <p style="font-family: 'Microsoft YaHei UI';color:red;font-size: large;padding-left:2%;padding-top: 5%">¥ 300.00</p>
+        </div>
+        <div  class="alpha" style="margin-left:6%;margin-top:4%;height: 30%;width: 45%;background-color: #ffffff;display: inline-block">
+            <img style="width: 100%" src="Image/mobile/6.jpg">
+            <p style="font-family: 'Microsoft YaHei UI';color:#000000;font-size: medium;padding-left:2%;padding-top: 10%;margin: 0px">托业考试学习</p>
+
+            <p style="font-family: 'Microsoft YaHei UI';color:green;font-size: large;padding-left:2%;padding-top: 5%">免费</p>
+        </div>
+        <div class="alpha" style="margin-left:2%;margin-top:4%;height: 30%;width: 45%;background-color: #ffffff;display: inline-block">
+            <img style="width: 100%" src="Image/mobile/7.jpg">
+            <p style="font-family: 'Microsoft YaHei UI';color:#000000;font-size: medium;padding-left:2%;padding-top: 10%;margin: 0px">英语大神教你说英语</p>
+            <p style="font-family: 'Microsoft YaHei UI';color:red;font-size: large;padding-left:2%;padding-top: 5%">¥ 99.00</p>
+        </div>
+        <div class="alpha" style="margin-left:6%;margin-top:4%;height: 30%;width: 45%;background-color: #ffffff;display: inline-block">
+            <img style="width: 100%" src="Image/mobile/8.jpg">
+            <p style="font-family: 'Microsoft YaHei UI';color:#000000;font-size: medium;padding-left:2%;padding-top: 10%;margin: 0px">日语入门</p>
+            <p style="font-family: 'Microsoft YaHei UI';color:green;font-size: large;padding-left:2%;padding-top: 5%">免费</p>
+        </div>
+    </div>
+    <div class="three" style="height: 70%;width: 100%;background-color: #f6f6f6;">
+        <p style="font-family: 'Microsoft YaHei UI';font-size: large;padding-left:2%;padding-top: 2%">排行榜</p>
+        <div style="margin-left:2%;margin-top:2%;height: 35%;width:95%;background-color: #ffffff;display: inline-table">
+            <img style="height: 100%;width: 35%;float: left;display: inline-block" src="Image/mobile/1.png">
+            <div style="width: 60%;height: 100%;display: inline-block;margin-top: 5%">
+                <p style="margin:0px;padding-left: 5%;padding-top: 5%;font-size: 15px"><span style="color: #007aff">1</span>st/马哥全新2016Python课程</p>
+                <p style="margin:0px;padding-left: 5%;padding-top: 5%;font-size: 15px"><span style="color: #007aff">2</span>nd/零基础学C语言</p>
+                <p style="margin:0px;padding-left: 5%;padding-top: 5%;font-size: 15px"><span style="color: #007aff">3</span>rd/马哥全新2016Python课程</p>
+            </div>
+            <div style="float: right;border:1px;height: 100%;width: 5%;background-color: #F0F0F0">
+            </div>
+        </div>
+        <div style="margin-left:2%;margin-top:5%;height: 35%;width:95%;background-color: #ffffff;display: inline-table">
+            <img style="height: 100%;width: 35%;float: left;display: inline-block" src="Image/mobile/7.png">
+            <div style="width: 60%;height: 100%;display: inline-block;margin-top: 5%">
+                <p style="margin:0px;padding-left: 5%;padding-top: 5%;font-size: 15px"><span style="color: #007aff">1</span>st/淘宝美工入门指导</p>
+                <p style="margin:0px;padding-left: 5%;padding-top: 5%;font-size: 15px"><span style="color: #007aff">2</span>nd/跟着Monster老师学口语</p>
+                <p style="margin:0px;padding-left: 5%;padding-top: 5%;font-size: 15px"><span style="color: #007aff">3</span>rd/轻轻松松过四级</p>
+            </div>
+            <div style="float: right;border:0.5px;height: 100%;width: 5%;background-color: #F0F0F0">
+            </div>
+        </div>
+        <center><p style="font-family: 'Microsoft YaHei UI';font-size: small;margin-top: 5%">Copyright © 2016 ElvisZhang. All Rights Reserved.</p></center>
+    </div>
+    <div id="bottomlabe2" style="position:fixed;bottom:0;left:0;height: 10%;width: 100%;background-color: #666666;opacity: 0.8">
+        <center><button id="loginmobile" style="margin-top: 3%;background-color: #00B38A" type="button" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">登录</button>
+       <button id="registermobile" style="margin-top: 3%;background-color: #FF9600" type="button" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">注册</button></center>
+    </div>
+</div>
+</body>
+</body>
+</html>

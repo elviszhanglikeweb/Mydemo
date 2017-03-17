@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="login.css" rel="stylesheet">
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="login.php"></script>
+    <script src="login.js"></script>
+</head>
+<body>
+<div class="login" >
+    <center><img border="2px solid #000000" style="margin-top: 5%" src="Image/three/1181388[1].gif"></center>
+    <center><p  style="font-family: cursive;font-size: xx-large;margin-top: 1%">Hello World</p></center>
+    <center><div  style="height: 10%;width:20%;margin-top: -10%;margin-top: 1%">
+        <form  class="bs-example bs-example-form" role="form">
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon">用户</span>
+                <input id="user" type="text" class="form-control" placeholder="比如Elviszhang">
+            </div><br>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon">密码</span>
+                <input id="password1" type="password" class="form-control" placeholder="请输入密码">
+            </div><br>
+        </form>
+    </div></center>
+    <center><span id="get" style="visibility: hidden">Welcome!</span></center>
+    <div class="btn-group" style="margin-top: 1%;margin-left:0%;height: 100%;width: 100%">
+       <center><button id="submit" type="buton" class="btn btn-default" style="background-color: #00a503;width: 20%;"><span style="color: #ffffff;">登录</span></button></center>
+    </div>
+    <a href="Register.html"><span style="color: #000000;margin-left: 57%">立即注册</span></a>
+</div>
+<div class="mobile" style="display: none">
+    <center><img border="2px solid #000000" style="margin-top: 5%" src="Image/three/1181388[1].gif"></center>
+    <center><p  style="font-family: cursive;font-size: 20px;margin-top: 5%">Hello World</p></center>
+    <center><div class="input-group" style="width: 60%">
+        <span class="input-group-addon">用户</span>
+        <input id="usermobile" type="text" class="form-control" placeholder="Username">
+    </div></center>
+    <center><div class="input-group" style="width: 60%;margin-top: 5%">
+        <span class="input-group-addon">密码</span>
+        <input id="password1mobile" type="password" class="form-control" placeholder="Password">
+    </div></center>
+    <center><span id="getmobile" style="visibility: hidden">Welcome!</span></center>
+    <center><button id="submitmobile" type="buton" class="btn btn-default" style="background-color: #00a503;width: 70%;"><span style="color: #ffffff;">登录</span></button></center>
+    <a href="Register.html"><span style="color: #000000;margin-left: 70%">立即注册</span></a>
+</div>
+</body>
+</html>

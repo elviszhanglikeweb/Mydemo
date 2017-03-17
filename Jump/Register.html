@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="register.css" type="text/css" rel="stylesheet">
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="register.js"></script>
+    <script src="register.php"></script>
+    <script src="check.php"></script>
+    <script src="login.js"></script>
+    <title>注册页面</title>
+</head>
+<body>
+<div class="mainbody">
+<div class="register" >
+    <center><img border="2px solid #000000" style="margin-top: 5%" src="Image/three/1181388[1].gif"></center>
+    <center><p style="font-family: cursive;font-size: xx-large;margin-top: 5%">Welcome to be one of our guys</p></center>
+    <div style="padding: 100px 100px 10px;margin-top: -10%">
+        <form class="bs-example bs-example-form" role="form">
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon">你的用户</span>
+                <input id="user" type="text" class="form-control" placeholder="比如张三">
+            </div><br>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon">输入密码</span>
+                <input id="password1" type="password" class="form-control" placeholder="请输入密码,不少于6位">
+            </div><br>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon">再次确认</span>
+                <input id="password2" type="password" class="form-control" placeholder="请再次输入密码">
+            </div><br>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon">你的邮箱</span>
+                <input id="email" type="text" class="form-control" placeholder="请输入可用邮箱">
+            </div>
+        </form>
+    </div>
+    <center><span id="get" style="visibility: hidden">Waiting</span></center>
+    <div class="btn-group" style="margin-top: 1%;margin-left: 75%">
+        <button id="submit" type="buton" class="btn btn-default" style="background-color: #00a503"><span style="color: #ffffff">注册</span></button>
+    </div>
+</div>
+<div class="mobile" style="display: none">
+    <center><img  style="margin-top: 5%" src="Image/three/1181388[1].gif"></center>
+    <center><p style="font-family: cursive;font-size: 20px;margin-top: 5%">Welcome to be one of our guys</p></center>
+    <center><div class="input-group" style="width: 60%;margin-top: 5%">
+        <span class="input-group-addon">注册用户</span>
+        <input id="usermobile" type="text" class="form-control" placeholder="Username">
+    </div></center>
+    <center><div class="input-group" style="width: 60%;margin-top: 5%">
+        <span class="input-group-addon">输入密码</span>
+        <input id="password1mobile1" type="password" class="form-control" >
+    </div></center>
+    <center><div class="input-group" style="width: 60%;margin-top: 5%">
+        <span class="input-group-addon">确认密码</span>
+        <input id="password1mobile2" type="password" class="form-control" >
+    </div></center>
+    <center><div class="input-group" style="width: 60%;margin-top: 5%">
+        <span class="input-group-addon">注册邮箱</span>
+        <input id="emailmobile" type="text" class="form-control" >
+    </div></center>
+    <center><span id="getmobile" style="visibility: hidden">Waiting</span></center>
+    <center><button id="submitmobile" type="buton" class="btn btn-default" style="margin-top:10%;background-color: #00a503;width: 70%;"><span style="color: #ffffff;">注册</span></button></center>
+</div>
+</div>
+</body>
+</html>
